@@ -64,18 +64,18 @@ public class GameMap : MonoBehaviour
 
         InitializeMap();
         //Team1
-        PlaceMeleeTeam1(Random.Range(0,5));
-        PlaceRangedTeam1(Random.Range(0,5));
-        PlaceWizzardTeam1(Random.Range(0,5));
-        PlaceFactoryTeam1(Random.Range(0,5));
-        PlaceResourceTeam1(Random.Range(0,5));
+        PlaceMeleeTeam1(4);
+        PlaceRangedTeam1(4);
+        PlaceWizzardTeam1(3);
+        PlaceFactoryTeam1(1);
+        PlaceResourceTeam1(1);
         //================================
         //Team 2
-        PlaceMeleeTeam2(Random.Range(0, 5));
-        PlaceRangedTeam2(Random.Range(0, 5));
-        PlaceWizzardTeam2(Random.Range(0, 5));
-        PlaceFactoryTeam2(Random.Range(0, 5));
-        PlaceResourceTeam2(Random.Range(0, 5));
+        PlaceMeleeTeam2(4);
+        PlaceRangedTeam2(4);
+        PlaceWizzardTeam2(3);
+        PlaceFactoryTeam2(1);
+        PlaceResourceTeam2(1);
 
         //Neutral
         PlaceNeutral(1);
@@ -312,7 +312,7 @@ public class GameMap : MonoBehaviour
             }
         }
     }
-
+    //Displays GameMap
     public void Display()
     {
         GameObject[] tiles = GameObject.FindGameObjectsWithTag("tile");
