@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Melee Unit.cs" />
+    <Compile Include="Assets\Scripts\RangedUnit.cs" />
     <Compile Include="Assets\Scripts\Unit Class.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Vega/GADE6112/POE/POE_GADE6112_KevinKramer_18010181/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
