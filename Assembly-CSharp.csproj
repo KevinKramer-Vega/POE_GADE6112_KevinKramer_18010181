@@ -60,17 +60,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Building.cs" />
-    <Compile Include="Assets\Scripts\FactoryBuilding.cs" />
-    <Compile Include="Assets\Scripts\GameEngine.cs" />
     <Compile Include="Assets\Scripts\GameMap.cs" />
-    <Compile Include="Assets\Scripts\Map.cs" />
-    <Compile Include="Assets\Scripts\Melee Unit.cs" />
-    <Compile Include="Assets\Scripts\NeutralTeam.cs" />
-    <Compile Include="Assets\Scripts\RangedUnit.cs" />
-    <Compile Include="Assets\Scripts\ResouceBuilding.cs" />
-    <Compile Include="Assets\Scripts\Unit Class.cs" />
-    <Compile Include="Assets\Scripts\WizardUnit.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\Building.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\FactoryBuilding.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\GameEngine.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\Map.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\Melee Unit.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\NeutralTeam.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\RangedUnit.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\ResouceBuilding.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\Unit Class.cs" />
+    <Compile Include="Assets\Scripts\TempClasses\WizardUnit.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
