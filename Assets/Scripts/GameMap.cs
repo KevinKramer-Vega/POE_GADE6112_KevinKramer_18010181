@@ -53,11 +53,10 @@ public class GameMap : MonoBehaviour
         //Team1
         PlaceTeam1(Random.Range(5, 10));
         PlaceBuildingTeam1(2);
-
         //================================
         //Team 2
-
-
+        PlaceTeam2(Random.Range(5, 10));
+        PlaceBuildingTeam2(2);
         //Neutral
         PlaceNeutral(5);
         // =========================
@@ -122,7 +121,6 @@ public class GameMap : MonoBehaviour
             {
                 i--;
             }
-
         }
         for (int i = 0; i < placeTeam1; i++)
         {
@@ -150,8 +148,9 @@ public class GameMap : MonoBehaviour
                 i--;
             }
         }
+
     }
-    //Place Teamq Buildings
+    //Place Team1 Buildings
     public void PlaceBuildingTeam1(int placeBuildingTeam1)
     {
         for (int i = 0; i < placeBuildingTeam1; i++)
@@ -184,12 +183,85 @@ public class GameMap : MonoBehaviour
         }
     }
 
+    //Place Team 2 units
+    public void PlaceTeam2(int placeTeam2)
+    {
+        for (int i = 0; i < placeTeam2; i++)
+        {
+            int x = Random.Range(1, mapSize - 1);
+            int z = Random.Range(1, mapSize - 1);
+            if (map[x, z] == TileType.OpenTile)
+            {
+                map[x, z] = TileType.MeleeUnit_Team2;
+            }
+            else
+            {
+                i--;
+            }
+        }
+        for (int i = 0; i < placeTeam2; i++)
+        {
+            int x = Random.Range(1, mapSize - 1);
+            int z = Random.Range(1, mapSize - 1);
+            if (map[x, z] == TileType.OpenTile)
+            {
+                map[x, z] = TileType.RangedUnit_Team2;
+            }
+            else
+            {
+                i--;
+            }
+        }
+        for (int i = 0; i < placeTeam2; i++)
+        {
+            int x = Random.Range(1, mapSize - 1);
+            int z = Random.Range(1, mapSize - 1);
+            if (map[x, z] == TileType.OpenTile)
+            {
+                map[x, z] = TileType.WizzardUnit_Team2;
+            }
+            else
+            {
+                i--;
+            }
+        }
 
-        //Place Team 2
+    }
+    //Place Team 2 Buildings
+    public void PlaceBuildingTeam2(int placeBuildingTeam2)
+    {
+        for (int i = 0; i < placeBuildingTeam2; i++)
+        {
+            int x = Random.Range(1, mapSize - 1);
+            int z = Random.Range(1, mapSize - 1);
+            if (map[x, z] == TileType.OpenTile)
+            {
+                map[x, z] = TileType.Resource_Team2;
+            }
+            else
+            {
+                i--;
+            }
 
+        }
+        for (int i = 0; i < placeBuildingTeam2; i++)
+        {
+            int x = Random.Range(1, mapSize - 1);
+            int z = Random.Range(1, mapSize - 1);
+            if (map[x, z] == TileType.OpenTile)
+            {
+                map[x, z] = TileType.Factory_Team2;
+            }
+            else
+            {
+                i--;
+            }
 
-        //Place Neutral
-        public void PlaceNeutral(int numWizNeut)
+        }
+    }
+
+    //Place Neutral Wizzards
+    public void PlaceNeutral(int numWizNeut)
         {
             for (int i = 0; i < numWizNeut; i++)
             {
@@ -206,8 +278,8 @@ public class GameMap : MonoBehaviour
             }
         }
 
-        //Displays GameMap
-        public void Display()
+    //Displays GameMap
+    public void Display()
         {
             GameObject[] tiles = GameObject.FindGameObjectsWithTag("tile");
             foreach (GameObject g in tiles)
@@ -242,19 +314,19 @@ public class GameMap : MonoBehaviour
                             Instantiate(Team1[4], new Vector3(x, 1f, z), Quaternion.identity);
                             break;
                         case TileType.MeleeUnit_Team2:
-                            Instantiate(Team2[5], new Vector3(x, 1f, z), Quaternion.identity);
+                            Instantiate(Team2[0], new Vector3(x, 1f, z), Quaternion.identity);
                             break;
                         case TileType.RangedUnit_Team2:
-                            Instantiate(Team2[6], new Vector3(x, 1f, z), Quaternion.identity);
+                            Instantiate(Team2[1], new Vector3(x, 1f, z), Quaternion.identity);
                             break;
                         case TileType.WizzardUnit_Team2:
-                            Instantiate(Team2[7], new Vector3(x, 1f, z), Quaternion.identity);
+                            Instantiate(Team2[2], new Vector3(x, 1f, z), Quaternion.identity);
                             break;
                         case TileType.Resource_Team2:
-                            Instantiate(Team2[8], new Vector3(x, 1f, z), Quaternion.identity);
+                            Instantiate(Team2[3], new Vector3(x, 1f, z), Quaternion.identity);
                             break;
                         case TileType.Factory_Team2:
-                            Instantiate(Team2[9], new Vector3(x, 1f, z), Quaternion.identity);
+                            Instantiate(Team2[4], new Vector3(x, 1f, z), Quaternion.identity);
                             break;
                         case TileType.Wizzard_Neutral:
                             Instantiate(Neutral[0], new Vector3(x, 1f, z), Quaternion.identity);
