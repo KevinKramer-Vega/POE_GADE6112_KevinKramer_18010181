@@ -17,8 +17,8 @@ public class Map : MonoBehaviour
     }
     List<Building> buildings = new List<Building>();//task 2
     List<Unit> units = new List<Unit>();
-    int numUnits ;
-    int numBuildings;//task 2
+    int numUnits=0 ;
+    int numBuildings=0;//task 2
    
    
 

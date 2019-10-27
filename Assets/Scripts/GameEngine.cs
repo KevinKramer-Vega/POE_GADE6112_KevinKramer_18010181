@@ -263,7 +263,7 @@ public class GameEngine : MonoBehaviour
                 }
             }
         }
-        map.Display();
+        
         round++;
     }
 
