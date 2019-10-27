@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Melee Unit.cs" />
+    <Compile Include="Assets\Scripts\NeutralTeam.cs" />
     <Compile Include="Assets\Scripts\RangedUnit.cs" />
     <Compile Include="Assets\Scripts\Unit Class.cs" />
     <Compile Include="Assets\Scripts\WizardUnit.cs" />
