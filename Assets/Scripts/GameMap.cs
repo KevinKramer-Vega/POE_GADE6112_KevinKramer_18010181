@@ -55,7 +55,6 @@ public class GameMap : MonoBehaviour
     {
 
         InitializeMap();
-        PlaceWall();
         PlaceTeam1();
         PlaceTeam2();
         PlaceNeutral();
@@ -106,5 +105,24 @@ public class GameMap : MonoBehaviour
         {
             map3[0, z] = Neutral.OpenTile;
         }
+    }
+
+    public void PlaceTeam1()
+    {
+
+    }
+
+    public void PlaceTeam2()
+    {
+
+    }
+    public void PlaceNeutral()
+    {
+
+    }
+
+    public void Display()
+    {
+
     }
 }
