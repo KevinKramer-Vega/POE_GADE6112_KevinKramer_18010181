@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\FactoryBuilding.cs" />
+    <Compile Include="Assets\Scripts\GameEngine.cs" />
     <Compile Include="Assets\Scripts\Melee Unit.cs" />
     <Compile Include="Assets\Scripts\NeutralTeam.cs" />
     <Compile Include="Assets\Scripts\RangedUnit.cs" />
