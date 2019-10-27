@@ -51,9 +51,9 @@ public class GameMap : MonoBehaviour
     {
         InitializeMap();
         //Team1
-        PlaceMeleeTeam1(5);
-        PlaceRangedTeam1(5);
-        PlaceWizTeam1(3);
+        PlaceMeleeTeam1(Random.Range(3,8));
+        PlaceRangedTeam1(Random.Range(3, 8));
+        PlaceWizTeam1(Random.Range(2,4));
         PlaceResTeam1(1);
         PlaceFacTeam1(1);
         //================================
@@ -247,23 +247,23 @@ public class GameMap : MonoBehaviour
                     case TileType.Factory_Team1:
                         Instantiate(Team1[4], new Vector3(x, 1f, z), Quaternion.identity);
                         break;
-                    //case TileType.MeleeUnit_Team2:
-                    //    Instantiate(Team2[5], new Vector3(x, 1f, z), Quaternion.identity);
-                    //    break;
-                    //case TileType.RangedUnit_Team2:
-                    //    Instantiate(Team2[6], new Vector3(x, 1f, z), Quaternion.identity);
-                    //    break;
-                    //case TileType.WizzardUnit_Team2:
-                    //    Instantiate(Team2[7], new Vector3(x, 1f, z), Quaternion.identity);
-                    //    break;
-                    //case TileType.Resource_Team2:
-                    //    Instantiate(Team2[8], new Vector3(x, 1f, z), Quaternion.identity);
-                    //    break;
-                    //case TileType.Factory_Team2:
-                    //    Instantiate(Team2[9], new Vector3(x, 1f, z), Quaternion.identity);
-                    //    break;
+                    case TileType.MeleeUnit_Team2:
+                        Instantiate(Team2[5], new Vector3(x, 1f, z), Quaternion.identity);
+                        break;
+                    case TileType.RangedUnit_Team2:
+                        Instantiate(Team2[6], new Vector3(x, 1f, z), Quaternion.identity);
+                        break;
+                    case TileType.WizzardUnit_Team2:
+                        Instantiate(Team2[7], new Vector3(x, 1f, z), Quaternion.identity);
+                        break;
+                    case TileType.Resource_Team2:
+                        Instantiate(Team2[8], new Vector3(x, 1f, z), Quaternion.identity);
+                        break;
+                    case TileType.Factory_Team2:
+                        Instantiate(Team2[9], new Vector3(x, 1f, z), Quaternion.identity);
+                        break;
                     case TileType.Wizzard_Neutral:
-                        Instantiate(Neutral[10], new Vector3(x, 1f, z), Quaternion.identity);
+                        Instantiate(Neutral[0], new Vector3(x, 1f, z), Quaternion.identity);
                         break;
                 }
             }
