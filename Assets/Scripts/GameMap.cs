@@ -28,57 +28,28 @@ public class GameMap : MonoBehaviour
         OpenTile,
         Wall
     }
-    //Team 2 Units/Buildings
-   /* public enum TileTypeTeam2
-    {
-        MeleeUnit_Team2,
-        RangedUnit_Team2,
-        WizzardUnit_Team2,
-        Resource_Team2,
-        Factory_Team2
-    }
-    //Neutral Team Unit + Neutral objects like a wall/openSpace
-    public enum Neutral
-    {
-        Wizzard_Neutral,
-        OpenTile,
-        Wall
-    }*/
+  
 
     public int mapSize;
     public GameObject OpenTile;
     public GameObject Wall;
     public GameObject [] team1;
-    public GameObject [] team2;
-    public GameObject [] neutral;
+   
 
     TileType[,] map;
-    //TileTypeTeam2[,] map2;
-    //Neutral[,] map3;
+    
     int posX;
     int posZ;
 
     // Start is called before the first frame update
     void Start()
     {
-
         InitializeMap();
         //Team1
         PlaceTeam1(20);
-        //PlaceMeleeTeam1(5);
-        //PlaceRangedTeam1(5);
-        //PlaceWizzardTeam1(3);
-        //PlaceFactoryTeam1(1);
-        //PlaceResourceTeam1(1);
         //================================
         //Team 2
         PlaceTeam2(20);
-        //PlaceMeleeTeam2(5);
-        //PlaceRangedTeam2(5);
-        //PlaceWizzardTeam2(3);
-        //PlaceFactoryTeam2(1);
-        //PlaceResourceTeam2(1);
-
         //Neutral
         PlaceNeutral(1);
         // =========================
@@ -160,179 +131,7 @@ public class GameMap : MonoBehaviour
         }
 
     }
-    //public void PlaceMeleeTeam1(int numMelee1)
-    //{
-    //    for (int i = 0; i < numMelee1; i++)
-    //    {
-    //       int x = Random.Range(1, mapSize - 1);
-    //       int z = Random.Range(1, mapSize - 1);
-    //       if (map[x, z] == TileType.OpenTile)
-    //       {
-    //         map[x, z] = TileType.MeleeUnit_Team1;
-    //       }
-    //       else
-    //       {
-    //          i--;
-    //       }
-    //    }
-
-    //}
-    //public void PlaceRangedTeam1(int numRanged1)
-    //{
-    //    for (int i = 0; i < numRanged1; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.RangedUnit_Team1;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-    //public void PlaceWizzardTeam1(int numWizzard1)
-    //{
-    //    for (int i = 0; i < numWizzard1; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.WizzardUnit_Team1;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-    //public void PlaceResourceTeam1(int numRes1)
-    //{
-    //    for (int i = 0; i < numRes1; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.Resource_Team1;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-    //public void PlaceFactoryTeam1(int numFac1)
-    //{
-    //    for (int i = 0; i < numFac1; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.Factory_Team1;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-
     
-
-    //public void PlaceMeleeTeam2(int numMelee2)
-    //{
-    //    for (int i = 0; i < numMelee2; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.MeleeUnit_Team2;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-    //public void PlaceRangedTeam2(int numRanged2)
-    //{
-    //    for (int i = 0; i < numRanged2; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.RangedUnit_Team2;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-    //public void PlaceWizzardTeam2(int numWizzard2)
-    //{
-    //    for (int i = 0; i < numWizzard2; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.WizzardUnit_Team2;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-    //public void PlaceResourceTeam2(int numRes2)
-    //{
-    //    for (int i = 0; i < numRes2; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.Resource_Team2;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
-    //public void PlaceFactoryTeam2(int numFac2)
-    //{
-    //    for (int i = 0; i < numFac2; i++)
-    //    {
-    //        int x = Random.Range(1, mapSize - 1);
-    //        int z = Random.Range(1, mapSize - 1);
-    //        if (map[x, z] == TileType.OpenTile)
-    //        {
-    //            map[x, z] = TileType.Factory_Team2;
-    //        }
-    //        else
-    //        {
-    //            i--;
-    //        }
-    //    }
-
-    //}
     public void PlaceNeutral(int numWizNeut)
     {
         for (int i = 0; i < numWizNeut; i++)

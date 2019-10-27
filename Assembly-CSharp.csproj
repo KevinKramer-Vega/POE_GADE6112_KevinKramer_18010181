@@ -61,16 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameMap.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\Building.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\FactoryBuilding.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\GameEngine.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\Map.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\Melee Unit.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\NeutralTeam.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\RangedUnit.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\ResouceBuilding.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\Unit Class.cs" />
-    <Compile Include="Assets\Scripts\TempClasses\WizardUnit.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
