@@ -64,6 +64,8 @@
     <Compile Include="Assets\HealthBar.cs" />
     <Compile Include="Assets\Scripts\cameraController.cs" />
     <Compile Include="Assets\Scripts\GameMap.cs" />
+    <Compile Include="Assets\Scripts\wander.cs" />
+    <Compile Include="Assets\Scripts\Wandering.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

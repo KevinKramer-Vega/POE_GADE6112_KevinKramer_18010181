@@ -34,7 +34,7 @@ public class GameMap : MonoBehaviour
 
     public int mapSize;
     public GameObject OpenTile;
-    public GameObject Wall;
+    //public GameObject Wall;
     public GameObject[] Team1;
     public GameObject[] Team2;
     public GameObject[] Neutral;
@@ -295,9 +295,9 @@ public class GameMap : MonoBehaviour
                         case TileType.OpenTile:
                             Instantiate(OpenTile, new Vector3(x, 1f, z), Quaternion.identity);
                             break;
-                        case TileType.Wall:
-                            Instantiate(Wall, new Vector3(x, 1f, z), Quaternion.identity);
-                            break;
+                    //case TileType.Wall:
+                    //    Instantiate(Wall, new Vector3(x, 1f, z), Quaternion.identity);
+                    //    break;
                         case TileType.MeleeUnit_Team1:
                             Instantiate(Team1[0], new Vector3(x, 1f, z), Quaternion.identity);
                             break;
