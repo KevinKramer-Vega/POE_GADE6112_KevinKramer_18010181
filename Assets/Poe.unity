@@ -276,6 +276,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b2b46ed8f352f44ab3eef47c45ea3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minX: -360
+  maxX: 360
+  minY: -45
+  maxY: 45
+  sensX: 100
+  sensY: 100
 --- !u!1 &583006043
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,19 +381,19 @@ MonoBehaviour:
   OpenTile: {fileID: 390800418575650780, guid: bfdadca4b058e8f43b634929af6a8543, type: 3}
   Wall: {fileID: 690228248316690082, guid: d82f95f06ec877647a975ac27014d7f9, type: 3}
   Team1:
-  - {fileID: 582727694469223590, guid: 1c8fd92bdb31fde46a5fe01f2f9049a1, type: 3}
-  - {fileID: 1229410745647547020, guid: 427b62a6ab4df1d468dbc406928853f8, type: 3}
-  - {fileID: 8819170524741705899, guid: 3b53db47523fe0444af4e360905bd6a1, type: 3}
-  - {fileID: 7553603010963710857, guid: a5445f260431b774bbaa2c6511401bc5, type: 3}
-  - {fileID: 8112108269442876194, guid: f9b99d20694770245baf33da2b35db1e, type: 3}
+  - {fileID: 8100360553444883480, guid: 1c8fd92bdb31fde46a5fe01f2f9049a1, type: 3}
+  - {fileID: 3186921348788271577, guid: 427b62a6ab4df1d468dbc406928853f8, type: 3}
+  - {fileID: 6260014772022980410, guid: 3b53db47523fe0444af4e360905bd6a1, type: 3}
+  - {fileID: 3821133456949569813, guid: a5445f260431b774bbaa2c6511401bc5, type: 3}
+  - {fileID: 4256802564561720407, guid: f9b99d20694770245baf33da2b35db1e, type: 3}
   Team2:
-  - {fileID: 3335491248051899504, guid: d4be9d9252300634fb662062db68950b, type: 3}
-  - {fileID: 8802702028161527098, guid: 7cfaef532a5631e40907b5023d30859a, type: 3}
-  - {fileID: 8023949544812792411, guid: f2753d9d3e077504dab34c747306ac55, type: 3}
-  - {fileID: 5839634138982410774, guid: d28de1022179e4c4ea4233b029a3869a, type: 3}
-  - {fileID: 4827200274444513480, guid: 7182b8f615a572041bb09deab60a8c45, type: 3}
+  - {fileID: 2992842587647987036, guid: 532108c605cabbc4fa48e7371925ecb3, type: 3}
+  - {fileID: 4768182236965715142, guid: 7cfaef532a5631e40907b5023d30859a, type: 3}
+  - {fileID: 7600459127004834810, guid: f2753d9d3e077504dab34c747306ac55, type: 3}
+  - {fileID: 1151656885850420104, guid: d28de1022179e4c4ea4233b029a3869a, type: 3}
+  - {fileID: 2508255439984846008, guid: 7182b8f615a572041bb09deab60a8c45, type: 3}
   Neutral:
-  - {fileID: 3053714439229033956, guid: 8fc6f91a5ee94b5418b95dd2cf2ada92, type: 3}
+  - {fileID: 4014833372016928419, guid: 8fc6f91a5ee94b5418b95dd2cf2ada92, type: 3}
 --- !u!4 &1415837212
 Transform:
   m_ObjectHideFlags: 0

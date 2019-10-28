@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/krame/Downloads/Roguelike-master/Roguelike-master/Assets/Scenes/SampleScene.unity
+- path: Assets/Poe.unity
   isLoaded: 1
   isActive: 1
